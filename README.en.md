@@ -1,8 +1,8 @@
 # National payment systems od Uzbekistan 
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/dt/goodoneuz/pay-uz.svg?style=flat)](https://packagist.org/packages/goodoneuz/pay-uz)
-[![Build Status](https://img.shields.io/travis/goodoneuz/pay-uz/master.svg?style=flat-square)](https://travis-ci.org/goodoneuz/pay-uz)
-[![Quality Score](https://img.shields.io/scrutinizer/g/goodoneuz/pay-uz.svg?style=flat-square)](https://scrutinizer-ci.com/g/goodoneuz/pay-uz)
+[![Latest Version on Packagist](https://img.shields.io/packagist/dt/makkapoya/pay-uz.svg?style=flat)](https://packagist.org/packages/makkapoya/pay-uz)
+[![Build Status](https://img.shields.io/travis/makkapoya/pay-uz/master.svg?style=flat-square)](https://travis-ci.org/makkapoya/pay-uz)
+[![Quality Score](https://img.shields.io/scrutinizer/g/makkapoya/pay-uz.svg?style=flat-square)](https://scrutinizer-ci.com/g/makkapoya/pay-uz)
 
 **Featured**
 ------
@@ -22,7 +22,7 @@
 You can install the package via composer:
 
 ```bash
-composer require goodoneuz/pay-uz
+composer require makkapoya/pay-uz
 ```
 
 ## Usage
@@ -55,7 +55,7 @@ If you discover any security related issues, please email shaxzodbek.qambaraliye
 
 ## Credits
 
-- [Shaxzodbek](https://github.com/goodoneuz)
+- [Shaxzodbek](https://github.com/makkapoya)
 - [Azizbek](https://github.com/azizbekeshonaliyev)
 - [Rustam Mamadaminov](https://github.com/rustamwin)
 - [All Contributors](../../contributors)

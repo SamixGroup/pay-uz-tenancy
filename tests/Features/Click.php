@@ -4,8 +4,8 @@ namespace Goodone\PayUz\Tests\Features;
 
 use PHPUnit\Framework\TestCase;
 use Illuminate\Support\Facades\Input;
-use Goodoneuz\PayUz\Models\PaymentSystem;
-use Goodoneuz\PayUz\Services\PaymentSystemService;
+use Makkapoya\PayUz\Models\PaymentSystem;
+use Makkapoya\PayUz\Services\PaymentSystemService;
 
 class Click extends \Illuminate\Foundation\Testing\TestCase
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Goodoneuz\PayUz\Http\Classes\Click;
+namespace Makkapoya\PayUz\Http\Classes\Click;
 
-use Goodoneuz\PayUz\Models\PaymentSystem;
-use Goodoneuz\PayUz\Http\Classes\PaymentException;
-use Goodoneuz\PayUz\Services\PaymentSystemService;
+use Makkapoya\PayUz\Models\PaymentSystem;
+use Makkapoya\PayUz\Http\Classes\PaymentException;
+use Makkapoya\PayUz\Services\PaymentSystemService;
 
 class Merchant{
     private $config;

@@ -6,11 +6,11 @@
  * Time: 12:26 PM
  */
 
-namespace Goodoneuz\PayUz\Http\Classes\Paynet;
+namespace Makkapoya\PayUz\Http\Classes\Paynet;
 
 use Carbon\Carbon;
 use App\Transaction;
-use Goodoneuz\PayUz\Http\Classes\PaymentException;
+use Makkapoya\PayUz\Http\Classes\PaymentException;
 
 class Response
 {

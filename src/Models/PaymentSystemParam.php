@@ -1,6 +1,6 @@
 <?php
 
-namespace Goodoneuz\PayUz\Models;
+namespace Makkapoya\PayUz\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

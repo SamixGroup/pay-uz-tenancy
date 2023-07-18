@@ -1,6 +1,6 @@
 <?php
 
-namespace Goodoneuz\PayUz\Http\Classes;
+namespace Makkapoya\PayUz\Http\Classes;
 
 abstract class BaseGateway
 {

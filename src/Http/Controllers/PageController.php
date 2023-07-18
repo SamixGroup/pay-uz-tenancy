@@ -6,7 +6,7 @@
  * Time: 5:01 PM
  */
 
-namespace Goodoneuz\PayUz\Http\Controllers;
+namespace Makkapoya\PayUz\Http\Controllers;
 
 
 use App\Http\Controllers\Controller;

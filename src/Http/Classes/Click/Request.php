@@ -1,5 +1,5 @@
 <?php
-namespace Goodoneuz\PayUz\Http\Classes\Click;
+namespace Makkapoya\PayUz\Http\Classes\Click;
 
 
 class Request{

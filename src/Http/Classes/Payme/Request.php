@@ -1,6 +1,6 @@
 <?php
 
-namespace Goodoneuz\PayUz\Http\Classes\Payme;
+namespace Makkapoya\PayUz\Http\Classes\Payme;
 
 class Request
 {

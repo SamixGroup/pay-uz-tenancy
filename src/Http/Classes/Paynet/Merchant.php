@@ -1,6 +1,6 @@
 <?php
 
-namespace Goodoneuz\PayUz\Http\Classes\Paynet;
+namespace Makkapoya\PayUz\Http\Classes\Paynet;
 
 class Merchant
 {

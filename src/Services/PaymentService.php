@@ -5,7 +5,7 @@
  * User: Shaxzodbek Qambaraliyev
  */
 
-namespace Goodoneuz\PayUz\Services;
+namespace Makkapoya\PayUz\Services;
 
 use App\User;
 use Illuminate\Support\Facades\Log;

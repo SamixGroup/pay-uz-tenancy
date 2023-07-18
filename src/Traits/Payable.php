@@ -6,7 +6,7 @@
  * Time: 8:40 PM
  */
 
-namespace Goodoneuz\PayUz;
+namespace Makkapoya\PayUz;
 
 
 

@@ -42,8 +42,8 @@
                     <div class="form-group">
                         <label for="exampleFormControlSelect1">Status:</label>
                         <select class="form-control" id="exampleFormControlSelect1" name="status">
-                            <option>{{ \Goodoneuz\PayUz\Models\PaymentSystem::ACTIVE }}</option>
-                            <option @if(old('status') == \Goodoneuz\PayUz\Models\PaymentSystem::NOT_ACTIVE) selected @endif>{{ \Goodoneuz\PayUz\Models\PaymentSystem::NOT_ACTIVE }}</option>
+                            <option>{{ \Makkapoya\PayUz\Models\PaymentSystem::ACTIVE }}</option>
+                            <option @if(old('status') == \Makkapoya\PayUz\Models\PaymentSystem::NOT_ACTIVE) selected @endif>{{ \Makkapoya\PayUz\Models\PaymentSystem::NOT_ACTIVE }}</option>
                         </select>
                     </div>
                     <div class="col-12" id="fieldsList">

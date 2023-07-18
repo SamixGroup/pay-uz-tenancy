@@ -1,6 +1,6 @@
 <?php
 
-namespace Goodoneuz\PayUz;
+namespace Makkapoya\PayUz;
 
 use Illuminate\Support\Facades\Facade;
 

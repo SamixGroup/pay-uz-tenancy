@@ -1,15 +1,15 @@
 <?php
 
-namespace Goodoneuz\PayUz\Http\Classes\Payme;
+namespace Makkapoya\PayUz\Http\Classes\Payme;
 
-use Goodoneuz\PayUz\Models\Transaction;
-use Goodoneuz\PayUz\Models\PaymentSystem;
-use Goodoneuz\PayUz\Services\PaymentService;
-use Goodoneuz\PayUz\Http\Classes\DataFormat;
-use Goodoneuz\PayUz\Http\Classes\BaseGateway;
-use Goodoneuz\PayUz\Models\PaymentSystemParam;
-use Goodoneuz\PayUz\Http\Classes\PaymentException;
-use Goodoneuz\PayUz\Services\PaymentSystemService;
+use Makkapoya\PayUz\Models\Transaction;
+use Makkapoya\PayUz\Models\PaymentSystem;
+use Makkapoya\PayUz\Services\PaymentService;
+use Makkapoya\PayUz\Http\Classes\DataFormat;
+use Makkapoya\PayUz\Http\Classes\BaseGateway;
+use Makkapoya\PayUz\Models\PaymentSystemParam;
+use Makkapoya\PayUz\Http\Classes\PaymentException;
+use Makkapoya\PayUz\Services\PaymentSystemService;
 
 class Payme extends BaseGateway
 {
@@ -358,7 +358,7 @@ class Payme extends BaseGateway
     }
 
     /**
-     * @throws \Goodoneuz\PayUz\Http\Classes\PaymentException
+     * @throws \Makkapoya\PayUz\Http\Classes\PaymentException
      */
     private function ChangePassword()
     {

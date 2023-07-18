@@ -6,10 +6,10 @@
  * Time: 1:07 PM
  */
 
-namespace Goodoneuz\PayUz\Services;
+namespace Makkapoya\PayUz\Services;
 
 
-use Goodoneuz\PayUz\Models\PaymentSystem;
+use Makkapoya\PayUz\Models\PaymentSystem;
 use Illuminate\Support\Facades\View;
 
 class PaymentSystemParamService

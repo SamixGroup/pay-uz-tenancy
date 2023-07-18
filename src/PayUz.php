@@ -1,15 +1,15 @@
 <?php
 
-namespace Goodoneuz\PayUz;
+namespace Makkapoya\PayUz;
 
 use Illuminate\Support\Facades\View;
-use Goodoneuz\PayUz\Models\Transaction;
-use Goodoneuz\PayUz\Models\PaymentSystem;
-use Goodoneuz\PayUz\Http\Classes\Payme\Payme;
-use Goodoneuz\PayUz\Http\Classes\Click\Click;
-use Goodoneuz\PayUz\Http\Classes\Paynet\Paynet;
-use Goodoneuz\PayUz\Http\Classes\Stripe\Stripe;
-use Goodoneuz\PayUz\Http\Classes\PaymentException;
+use Makkapoya\PayUz\Models\Transaction;
+use Makkapoya\PayUz\Models\PaymentSystem;
+use Makkapoya\PayUz\Http\Classes\Payme\Payme;
+use Makkapoya\PayUz\Http\Classes\Click\Click;
+use Makkapoya\PayUz\Http\Classes\Paynet\Paynet;
+use Makkapoya\PayUz\Http\Classes\Stripe\Stripe;
+use Makkapoya\PayUz\Http\Classes\PaymentException;
 
 class PayUz
 {

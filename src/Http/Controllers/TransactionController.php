@@ -6,11 +6,11 @@
  * Time: 8:17 PM
  */
 
-namespace Goodoneuz\PayUz\Http\Controllers;
+namespace Makkapoya\PayUz\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use Goodoneuz\PayUz\Models\Transaction;
+use Makkapoya\PayUz\Models\Transaction;
 
 class TransactionController extends Controller
 {

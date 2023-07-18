@@ -1,11 +1,11 @@
 <?php
 
-namespace Goodoneuz\PayUz\Database\Seeds;
+namespace Makkapoya\PayUz\Database\Seeds;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Schema;
-use Goodoneuz\PayUz\Models\PaymentSystem;
-use Goodoneuz\PayUz\Models\PaymentSystemParam;
+use Makkapoya\PayUz\Models\PaymentSystem;
+use Makkapoya\PayUz\Models\PaymentSystemParam;
 
 class PayUzSeeder extends Seeder
 {

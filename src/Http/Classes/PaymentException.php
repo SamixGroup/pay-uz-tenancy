@@ -1,5 +1,5 @@
 <?php
-namespace Goodoneuz\PayUz\Http\Classes;
+namespace Makkapoya\PayUz\Http\Classes;
 
 
 class PaymentException extends \Exception{

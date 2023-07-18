@@ -48,14 +48,14 @@
                     </tfoot>
                     <tbody>
                     @foreach($projects as $project)
-                        <tr class="@if($project->status == \Goodoneuz\PayUz\Models\Project::NOT_ACTIVE) table-danger @endif">
+                        <tr class="@if($project->status == \Makkapoya\PayUz\Models\Project::NOT_ACTIVE) table-danger @endif">
                             <td>{{ $project->name }}</td>
                             <td>{{ $project->status }}</td>
                             <td>{{ $project->created_at }}</td>
                             <td class="text-center">
                                 <a href="#" data-project-id="{{ $project->id }}" class="deleteBtn"><span class="fa fa-trash" data-toggle="tooltip" data-placement="top" title="O'chirish"></span></a> &nbsp;
                                 <a href="{{ route('payment.projects.edit',['project'  => $project->id]) }}"><span class="fa fa-cog" data-toggle="tooltip" data-placement="top" title="Sozlash"></span></a> &nbsp;
-                                <a href="{{ route('payment.projects.edit_status',['project'  => $project->id]) }}"><span class="fa @if($project->status == \Goodoneuz\PayUz\Models\Project::NOT_ACTIVE) fa-lock @else fa-unlock-alt @endif " data-toggle="tooltip" data-placement="top" title="Bloklash"></span></a>
+                                <a href="{{ route('payment.projects.edit_status',['project'  => $project->id]) }}"><span class="fa @if($project->status == \Makkapoya\PayUz\Models\Project::NOT_ACTIVE) fa-lock @else fa-unlock-alt @endif " data-toggle="tooltip" data-placement="top" title="Bloklash"></span></a>
                             </td>
                         </tr>
                     @endforeach

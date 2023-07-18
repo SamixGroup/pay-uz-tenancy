@@ -6,10 +6,10 @@
  * Time: 8:26 PM
  */
 
-namespace Goodoneuz\PayUz\Services;
+namespace Makkapoya\PayUz\Services;
 
 
-use Goodoneuz\PayUz\Models\Transaction;
+use Makkapoya\PayUz\Models\Transaction;
 
 class TransactionService
 {

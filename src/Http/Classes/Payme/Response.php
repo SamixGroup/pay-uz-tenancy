@@ -1,8 +1,8 @@
 <?php
 
-namespace Goodoneuz\PayUz\Http\Classes\Payme;
+namespace Makkapoya\PayUz\Http\Classes\Payme;
 
-use Goodoneuz\PayUz\Http\Classes\PaymentException;
+use Makkapoya\PayUz\Http\Classes\PaymentException;
 
 class Response
 {

@@ -4,11 +4,11 @@ namespace App\Http\Classes;
 
 use App\Order;
 use App\Transaction;
-use Goodoneuz\PayUz\Classes\DataFormat;
-use Goodoneuz\PayUz\Classes\Oson\Merchant;
-use Goodoneuz\PayUz\Classes\Paycom\Request;
-use Goodoneuz\PayUz\Http\Classes\BaseGateway;
-use Goodoneuz\PayUz\Classes\Oson\OsonException;
+use Makkapoya\PayUz\Classes\DataFormat;
+use Makkapoya\PayUz\Classes\Oson\Merchant;
+use Makkapoya\PayUz\Classes\Paycom\Request;
+use Makkapoya\PayUz\Http\Classes\BaseGateway;
+use Makkapoya\PayUz\Classes\Oson\OsonException;
 
 class Oson extends BaseGateway
 {

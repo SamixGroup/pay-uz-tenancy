@@ -2,11 +2,11 @@
     "name": "makkapoya/pay-uz-tenancy",
     "description": "Payment: Click, Payme, Uzcard, Visa",
     "keywords": [
-        "goodoneuz",
+        "makkapoya",
         "pay-uz",
         "payme"
     ],
-    "homepage": "https://github.com/goodoneuz/pay-uz",
+    "homepage": "https://github.com/makkapoya/pay-uz-tenancy",
     "license": "MIT",
     "type": "library",
     "authors": [
@@ -32,12 +32,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Goodoneuz\\PayUz\\": "src"
+            "Makkapoya\\PayUz\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Goodoneuz\\PayUz\\Tests\\": "tests"
+            "Makkapoya\\PayUz\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -50,10 +50,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Goodoneuz\\PayUz\\PayUzServiceProvider"
+                "Makkapoya\\PayUz\\PayUzServiceProvider"
             ],
             "aliases": {
-                "PayUz": "Goodoneuz\\PayUz\\PayUzFacade"
+                "PayUz": "Makkapoya\\PayUz\\PayUzFacade"
             }
         }
     }

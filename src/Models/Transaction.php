@@ -1,8 +1,8 @@
 <?php
 
-namespace Goodoneuz\PayUz\Models;
+namespace Makkapoya\PayUz\Models;
 
-use Goodoneuz\PayUz\Http\Classes\DataFormat;
+use Makkapoya\PayUz\Http\Classes\DataFormat;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Database\Eloquent\SoftDeletes;

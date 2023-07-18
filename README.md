@@ -4,7 +4,7 @@
 
 <a href="https://payme.uz/@shaxzodbek_" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/dt/goodoneuz/pay-uz.svg?style=flat)](https://packagist.org/packages/goodoneuz/pay-uz)
+[![Latest Version on Packagist](https://img.shields.io/packagist/dt/makkapoya/pay-uz-tenancy.svg?style=flat)](https://packagist.org/packages/makkapoya/pay-uz-tenancy)
 [![Build Status](https://img.shields.io/travis/shaxzodbek-uzb/pay-uz/master.svg?style=flat-square)](https://travis-ci.org/shaxzodbek-uzb/pay-uz)
 [![Quality Score](https://img.shields.io/scrutinizer/g/shaxzodbek-uzb/pay-uz.svg?style=flat-square)](https://scrutinizer-ci.com/g/shaxzodbek-uzb/pay-uz)
 
@@ -28,12 +28,12 @@
 You can install the package via composer:
 
 ```bash
-composer require goodoneuz/pay-uz
+composer require makkapoya/pay-uz
 ```
 Publishing required files of package:
 
 ```bash
-php artisan vendor:publish --provider="Goodoneuz\PayUz\PayUzServiceProvider"
+php artisan vendor:publish --provider="Makkapoya\PayUz\PayUzServiceProvider"
 ```
 Migrate tables:
 
@@ -44,7 +44,7 @@ php artisan migrate
 Seed settings:
 
 ```bash
-php artisan db:seed --class="Goodoneuz\PayUz\database\seeds\PayUzSeeder"
+php artisan db:seed --class="Makkapoya\PayUz\database\seeds\PayUzSeeder"
 ```
 
 ## Usage
@@ -55,14 +55,14 @@ Placing routes for service in web.php
 
 //handle requests from payment system
 Route::any('/handle/{paysys}',function($paysys){
-    (new Goodoneuz\PayUz\PayUz)->driver($paysys)->handle();
+    (new Makkapoya\PayUz\PayUz)->driver($paysys)->handle();
 });
 
 //redirect to payment system or payment form
 Route::any('/pay/{paysys}/{key}/{amount}',function($paysys, $key, $amount){
-	$model = Goodoneuz\PayUz\Services\PaymentService::convertKeyToModel($key);
+	$model = Makkapoya\PayUz\Services\PaymentService::convertKeyToModel($key);
     $url = request('redirect_url','/'); // redirect url after payment completed
-    $pay_uz = new Goodoneuz\PayUz\PayUz;
+    $pay_uz = new Makkapoya\PayUz\PayUz;
     $pay_uz
     	->driver($paysys)
     	->redirect($model, $amount, 860, $url);
@@ -84,11 +84,12 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ### Security
 
-If you discover any security related issues, please email shaxzodbek.qambaraliyev@gmail.com instead of using the issue tracker.
+If you discover any security related issues, please email samixgroupedia@gmail.com instead of using the issue tracker.
 
 ## Credits
 
 - [Shaxzodbek](https://github.com/shaxzodbek-uzb)
+- [Samandar](https://github.com/samixgroup)
 - [Azizbek](https://github.com/azizbekeshonaliyev)
 - [Rustam Mamadaminov](https://github.com/rustamwin)
 - [All Contributors](../../contributors)

@@ -6,15 +6,15 @@
  * Time: 8:41 PM
  */
 
-namespace Goodoneuz\PayUz\Http\Controllers;
+namespace Makkapoya\PayUz\Http\Controllers;
 
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
-use Goodoneuz\PayUz\Models\PaymentSystem;
-use Goodoneuz\PayUz\Models\PaymentSystemParam;
-use Goodoneuz\PayUz\Services\PaymentSystemService;
+use Makkapoya\PayUz\Models\PaymentSystem;
+use Makkapoya\PayUz\Models\PaymentSystemParam;
+use Makkapoya\PayUz\Services\PaymentSystemService;
 
 class PaymentSystemController extends Controller
 {

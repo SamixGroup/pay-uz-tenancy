@@ -1,9 +1,9 @@
 <?php
 
-namespace Goodoneuz\PayUz\Http\Controllers;
+namespace Makkapoya\PayUz\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Goodoneuz\PayUz\Models\Project;
+use Makkapoya\PayUz\Models\Project;
 use App\Http\Controllers\Controller;
 
 class ProjectController extends Controller

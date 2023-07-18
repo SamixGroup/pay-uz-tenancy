@@ -24,7 +24,7 @@ if (empty($middleware) || $middleware == null) {
     }
 }
 
-Route::middleware($middleware)->name('payment.')->prefix('payment')->namespace('Goodoneuz\PayUz\Http\Controllers')->group(function () {
+Route::middleware($middleware)->name('payment.')->prefix('payment')->namespace('Makkapoya\PayUz\Http\Controllers')->group(function () {
     Route::any('dashboard', 'PageController@dashboard')->name('dashboard');
     Route::any('editors', 'PageController@editors')->name('editors');
     Route::any('blank', 'PageController@blank')->name('blank');

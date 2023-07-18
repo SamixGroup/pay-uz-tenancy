@@ -6,12 +6,12 @@
  * Time: 8:31 PM
  */
 
-namespace Goodoneuz\PayUz\Services;
+namespace Makkapoya\PayUz\Services;
 
 
 use Illuminate\Support\Facades\DB;
-use Goodoneuz\PayUz\Models\PaymentSystem;
-use Goodoneuz\PayUz\Models\PaymentSystemParam;
+use Makkapoya\PayUz\Models\PaymentSystem;
+use Makkapoya\PayUz\Models\PaymentSystemParam;
 
 class PaymentSystemService
 {
