@@ -1,9 +1,10 @@
 {
-    "name": "goodoneuz/pay-uz",
+    "name": "makkapoya/pay-uz-tenancy",
     "description": "Payment: Click, Payme, Uzcard, Visa",
     "keywords": [
         "goodoneuz",
-        "pay-uz"
+        "pay-uz",
+        "payme"
     ],
     "homepage": "https://github.com/goodoneuz/pay-uz",
     "license": "MIT",
@@ -12,6 +13,11 @@
         {
             "name": "Shaxzodbek",
             "email": "shaxzodbek.qambaraliyev@gmail.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Samandar Murodjonov",
+            "email": "samixgroupmedia@gmail.com",
             "role": "Developer"
         }
     ],
