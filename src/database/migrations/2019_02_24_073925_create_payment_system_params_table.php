@@ -16,9 +16,12 @@ class CreatePaymentSystemParamsTable extends Migration
         Schema::create('payment_system_params', function (Blueprint $table) {
             $table->increments('id');
             $table->string('system');
+            $table->integer('payment_system_id')->nullable();
             $table->string('label')->nullable();
             $table->string('name')->nullable();
             $table->text('value')->nullable();
+            $table->integer('tenant_id')->nullable();
+            $table->string('tenant_type')->nullable();
             $table->timestamps();
         });
     }

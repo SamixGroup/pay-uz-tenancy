@@ -18,12 +18,13 @@ class Payme extends BaseGateway
     public $response;
     public $merchant;
     public $payment_system;
-
+    protected $tenant_id;
     /**
      * Payme constructor.
      */
-    public function __construct()
+    public function __construct($tenant_id)
     {
+        $this->tenant_id = $tenant_id;
         $this->config   = PaymentSystemService::getPaymentSystemParamsCollect(PaymentSystem::PAYME);
     }
 

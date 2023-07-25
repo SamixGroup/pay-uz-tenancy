@@ -14,5 +14,5 @@ return [
         'middleware' => null,
     ],
     'multi_transaction' => true,
-    'tenant_type'=>''
+    'tenant_key'=>'tenant_id'
 ];

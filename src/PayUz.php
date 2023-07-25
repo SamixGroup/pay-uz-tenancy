@@ -15,12 +15,13 @@ class PayUz
 {
 
     protected $driverClass = null;
-
+    protected $tenant_id;
     /**
      * PayUz constructor.
      */
-    public function __construct()
+    public function __construct($tenant_id)
     {
+        $this->tenant_id = $tenant_id;
     }
 
 
@@ -33,7 +34,7 @@ class PayUz
     {
         switch ($driver) {
             case PaymentSystem::PAYME:
-                $this->driverClass = new Payme;
+                $this->driverClass = new Payme($this->tenant_id);
                 break;
             case PaymentSystem::CLICK:
                 $this->driverClass = new Click;

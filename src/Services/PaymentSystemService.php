@@ -41,6 +41,7 @@ class PaymentSystemService
             {
                 PaymentSystemParam::create([
                     'system'    => $payment_system->system,
+                    'payment_system_id'=>$payment_system->id,
                     'label'     => $param['label'],
                     'name'      => $param['name'],
                     'value'     => $param['value']    
@@ -58,7 +59,7 @@ class PaymentSystemService
         if (isset($request['params']) && is_array($request['params']))
         {
             DB::table('payment_system_params')
-            ->where('system',$request['system'])
+            ->where('payment_system_id',$payment_system->id)
             ->delete();
 
             self::storeParams($request['params'],$payment_system);
@@ -70,9 +71,9 @@ class PaymentSystemService
      * @param $driver
      * @return array
      */
-    public static function getPaymentSystemParamsCollect($driver)
+    public static function getPaymentSystemParamsCollect($driver, $tenant_id)
     {
-        $params = PaymentSystemParam::where('system',$driver)->get();
+        $params = PaymentSystemParam::where('system',$driver)->where(config('pay-uz.tenant_key'),$tenant_id)->get();
 
         if (count($params)>0)
         
