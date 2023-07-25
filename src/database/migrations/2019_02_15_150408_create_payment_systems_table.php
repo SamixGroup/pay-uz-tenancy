@@ -17,8 +17,6 @@ class CreatePaymentSystemsTable extends Migration
             $table->increments('id');
             $table->string('name')->nullable();
             $table->string('system');
-            $table->integer('tenant_id')->nullable();
-            $table->string('tenant_type')->nullable();
             $table->string('status')->default(\Makkapoya\PayUz\Models\PaymentSystem::NOT_ACTIVE);
             $table->timestamps();
         });

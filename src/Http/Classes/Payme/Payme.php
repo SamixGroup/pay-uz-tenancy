@@ -25,7 +25,7 @@ class Payme extends BaseGateway
     public function __construct($tenant_id)
     {
         $this->tenant_id = $tenant_id;
-        $this->config   = PaymentSystemService::getPaymentSystemParamsCollect(PaymentSystem::PAYME);
+        $this->config   = PaymentSystemService::getPaymentSystemParamsCollect(PaymentSystem::PAYME, $tenant_id);
     }
 
     public function run()

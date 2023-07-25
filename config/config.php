@@ -3,6 +3,8 @@
 /*
  * You can place your custom package configuration in here.
  */
+
+
 return [
 
     // Assets folder published folder name.
@@ -14,5 +16,6 @@ return [
         'middleware' => null,
     ],
     'multi_transaction' => true,
-    'tenant_key'=>'tenant_id'
+    'tenant_key'=>'tenant_id',
+    'tenant_type'=>\Makkapoya\PayUz\Models\Tenant::class
 ];

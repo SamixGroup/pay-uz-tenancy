@@ -19,7 +19,8 @@ class PaymentSystemParam extends Model
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasOne
      */
-    public function payment_system(){
-        return $this->hasOne(PaymentSystem::class,'payment_system_id');
+    public function payment_system()
+    {
+        return $this->hasOne(PaymentSystem::class, 'system', 'system');
     }
 }
