@@ -2,10 +2,8 @@
 
 namespace Makkapoya\PayUz\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
 
-class Tenant extends Model
+class Tenant extends BaseModel
 {
     protected $fillable = ['title'];
 }

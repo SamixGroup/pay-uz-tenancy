@@ -18,7 +18,7 @@ class PayUzSeeder extends Seeder
     public function run()
     {
         if (Schema::hasTable('tenants')) {
-            $tenant = Tenant::firstOrCreate([
+            $tenant = Tenant::create([
                 'title' => 'Tenant'
             ]);
         }

@@ -9,9 +9,8 @@
 namespace Makkapoya\PayUz\Models;
 
 
-use Illuminate\Database\Eloquent\Model;
 
-class PaymentSystem extends Model
+class PaymentSystem extends BaseModel
 {
 
     const NOT_ACTIVE = 'not_active';

@@ -17,5 +17,6 @@ return [
     ],
     'multi_transaction' => true,
     'tenant_key'=>'tenant_id',
-    'tenant_type'=>\Makkapoya\PayUz\Models\Tenant::class
+    'tenant_type'=>\Makkapoya\PayUz\Models\Tenant::class,
+    'db_prefix'=>''
 ];

@@ -2,9 +2,8 @@
 
 namespace Makkapoya\PayUz\Models;
 
-use Illuminate\Database\Eloquent\Model;
 
-class PaymentSystemParam extends Model
+class PaymentSystemParam extends BaseModel
 {
     /**
      * @var array
@@ -14,6 +13,8 @@ class PaymentSystemParam extends Model
         'label',
         'name',
         'value',
+        'tenant_id',
+        'tenant_type'
     ];
 
     /**

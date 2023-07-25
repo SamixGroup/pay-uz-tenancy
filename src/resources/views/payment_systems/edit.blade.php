@@ -41,6 +41,14 @@
                     @endif
                 </div>
                 <div class="form-group">
+                    
+                    <label for="tenant-id" class="col-form-label">TenantID (<span class="text-danger">*</span>):</label>
+                    <input name="tenant_id" type="number" class="form-control @if ($errors->has('tenant_id')) is-invalid @endif" id="tenant-id" placeholder="1"  value="{{ $payment_system->params[0]->tenant_id }}">
+                    @if ($errors->has('system'))
+                        <div class="invalid-feedback">{{ $errors->first('system') }}</div>
+                    @endif
+                </div>
+                <div class="form-group">
                     <label for="exampleFormControlSelect1">Status:</label>
                     <select class="form-control" id="exampleFormControlSelect1" name="status">
                         <option>{{ \Makkapoya\PayUz\Models\PaymentSystem::ACTIVE }}</option>

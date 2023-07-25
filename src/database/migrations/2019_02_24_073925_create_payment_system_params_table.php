@@ -13,7 +13,7 @@ class CreatePaymentSystemParamsTable extends Migration
      */
     public function up()
     {
-        Schema::create('payment_system_params', function (Blueprint $table) {
+        Schema::create(config('payuz.db_prefix') . 'payment_system_params', function (Blueprint $table) {
             $table->increments('id');
             $table->string('system');
             $table->string('label')->nullable();

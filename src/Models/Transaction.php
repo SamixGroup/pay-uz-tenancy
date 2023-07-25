@@ -3,11 +3,10 @@
 namespace Makkapoya\PayUz\Models;
 
 use Makkapoya\PayUz\Http\Classes\DataFormat;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Transaction extends Model
+class Transaction extends BaseModel
 {
     use SoftDeletes;
 

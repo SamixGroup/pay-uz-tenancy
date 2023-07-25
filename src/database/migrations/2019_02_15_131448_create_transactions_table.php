@@ -13,7 +13,7 @@ class CreateTransactionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('transactions', function (Blueprint $table) {
+        Schema::create(config('payuz.db_prefix') . 'transactions', function (Blueprint $table) {
             $table->increments('id');
             $table->string('payment_system');
             $table->string('system_transaction_id');
